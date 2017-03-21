@@ -12,6 +12,7 @@ public class homePage extends basePage {
         hp.test();
         WebDriver driver = hp.initDriver();
         driver.get("http://www.google.com");
+        hp.enterText("lst-ib");
         Thread.sleep(5000);
         driver.quit();
     }

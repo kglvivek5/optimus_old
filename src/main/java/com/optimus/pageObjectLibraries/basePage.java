@@ -1,5 +1,6 @@
 package com.optimus.pageObjectLibraries;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -24,5 +25,9 @@ public class basePage {
         capabilities.setCapability("marionette", true);
         driver = new FirefoxDriver(capabilities);
         return driver;
+    }
+
+    public void enterText(String locator) {
+        driver.findElement(By.id(locator)).sendKeys("Selenium");
     }
 }

@@ -5,12 +5,12 @@ import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 /**
- * Created by elakskg on 3/21/2017.
+ * Created by elakskg on 3/22/2017.
  */
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/main/java/com/optimus/features",
-                glue = {"src/main/java/com/optimus/pageObjectLibraries"},
-                dryRun = true)
-public class cukesRunner {
+        glue = {"src/main/java/com/optimus/pageObjectLibraries"},
+        dryRun = true)
+public class cukesRunnerTest {
 }
